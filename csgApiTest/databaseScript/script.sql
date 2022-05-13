@@ -1,0 +1,1 @@
+SELECT d.name, count(e.id) from department d left join employee e on e.depto_id = d.id group by d.id order by count(e.id) desc
